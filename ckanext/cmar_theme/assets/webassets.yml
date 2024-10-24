@@ -1,0 +1,14 @@
+# cmar_theme-js:
+#   filter: rjsmin
+#   output: ckanext-cmar_theme/%(version)s-cmar_theme.js
+#   contents:
+#     - js/cmar_theme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# cmar_theme-css:
+#   filter: cssrewrite
+#   output: ckanext-cmar_theme/%(version)s-cmar_theme.css
+#   contents:
+#     - css/cmar_theme.css
