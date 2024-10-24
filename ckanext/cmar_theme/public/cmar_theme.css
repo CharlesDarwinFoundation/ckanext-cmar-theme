@@ -1,0 +1,22 @@
+/*  cmar_theme.css
+    Custom CSS for CMAR CKAN theme.
+*/
+
+/* ----- Color Palette ----- */
+:root {
+    --cmar-primary-palette-dark-blue: #2b4277;
+    --cmar-primary-palette-light-blue: #379ed7;
+    --cmar-primary-palette-main-blue: #3276bc;
+    --cmar-primary-palette-dark-green: #358f3c;
+    --cmar-primary-palette-light-green: #83b640;
+    --cmar-primary-palette-black: #121212;
+    --cmar-secundary-palette-orange: #FC9D2B;
+    --cmar-secundary-palette-yellow: #fbd118;
+    --cmar-secundary-palette-teal: #00a79d;
+    --cmar-secundary-palette-grey: #9b8579;
+}
+
+body {
+    color: var(--cmar-primary-palette-black);
+    background-color: var(--bs-white);
+}
