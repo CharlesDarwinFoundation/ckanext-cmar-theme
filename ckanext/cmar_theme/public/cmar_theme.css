@@ -39,6 +39,8 @@
     --cmar-secundary-palette-grey: #9b8579;
 }
 
+
+/* ----- Global ----- */
 html {
     font-size: 16px;
 }
@@ -51,6 +53,9 @@ body {
     background-color: var(--bs-white);
 }
 
+.search-form {
+    border-bottom: none;
+}
 
 /* ----- Header ----- */
 .masthead,
@@ -81,8 +86,24 @@ body {
 
 
 /* ----- Homepage ----- */
-.homepage .hero, 
-.homepage .module-feeds {
+.homepage .hero {
     background-image: none;
     background-color: var(--cmar-primary-palette-light-blue);
+}
+.homepage .module-promotion {
+    background-color: var(--cmar-primary-palette-light-blue);
+    box-shadow: none;
+    border: none;
+    text-align: center;
+}
+h1.page-heading {
+    font-weight: 900;
+    font-size: 4em;
+}
+.module-promotion p {
+    color: var(--bs-white);
+    font-size: 2em;
+}
+.homepage .search-form .search-input input.form-control {
+    border-radius: 1.1em;
 }
