@@ -2,6 +2,30 @@
     Custom CSS for CMAR CKAN theme.
 */
 
+/* ----- Fonts ----- */
+@font-face {
+    font-family: 'Muli';
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    src: url('/fonts/Muli-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Muli';
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    src: url('/fonts/Muli-ExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Muli';
+    font-weight: 900; /* Black */
+    font-style: normal;
+    src: url('/fonts/Muli-Black.ttf') format('truetype');
+  }
+
+
+
 /* ----- Color Palette ----- */
 :root {
     --cmar-primary-palette-dark-blue: #2b4277;
@@ -16,7 +40,14 @@
     --cmar-secundary-palette-grey: #9b8579;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     color: var(--cmar-primary-palette-black);
     background-color: var(--bs-white);
 }
