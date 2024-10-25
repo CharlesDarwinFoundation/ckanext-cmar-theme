@@ -25,7 +25,6 @@
   }
 
 
-
 /* ----- Color Palette ----- */
 :root {
     --cmar-primary-palette-dark-blue: #2b4277;
@@ -50,4 +49,34 @@ body {
     line-height: 1.6;
     color: var(--cmar-primary-palette-black);
     background-color: var(--bs-white);
+}
+
+
+/* ----- Header ----- */
+.masthead {
+    background-image: none;
+    background-color: var(--bs-white);
+    color: var(--cmar-primary-palette-black);
+}
+.masthead .main-navbar ul li a {
+    color: var(--cmar-primary-palette-black);
+}
+
+
+/* ----- Footer ----- */
+.site-footer {
+    background-image: none;
+    background-color: var(--bs-white);
+    color: var(--cmar-primary-palette-black);
+}
+.site-footer a {
+    color: var(--cmar-primary-palette-black);
+}
+
+
+/* ----- Homepage ----- */
+.homepage .hero, 
+.homepage .module-feeds {
+    background-image: none;
+    background-color: var(--cmar-primary-palette-light-blue);
 }
