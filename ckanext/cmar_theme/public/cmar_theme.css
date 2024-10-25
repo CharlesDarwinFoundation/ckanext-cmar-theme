@@ -53,7 +53,8 @@ body {
 
 
 /* ----- Header ----- */
-.masthead {
+.masthead,
+.account-masthead {
     background-image: none;
     background-color: var(--bs-white);
     color: var(--cmar-primary-palette-black);
@@ -61,7 +62,12 @@ body {
 .masthead .main-navbar ul li a {
     color: var(--cmar-primary-palette-black);
 }
-
+.masthead .navbar .logo img {
+    height: 120px;
+}
+.account-masthead .account ul li a {
+    color: var(--cmar-primary-palette-dark-blue);
+}
 
 /* ----- Footer ----- */
 .site-footer {

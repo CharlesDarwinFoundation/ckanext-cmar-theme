@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% block header_logo %}
+    <a class="logo" href="{{ h.url_for('home.index') }}">
+    <img src="/cmar.svg" alt="{{ g.site_title }}"
+        aria-label="{{ _('Navigate to Home - {site_title}').format(site_title=g.site_title) }}"/>
+    </a>
+{% endblock %}
