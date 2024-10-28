@@ -68,6 +68,10 @@ body {
 .masthead .main-navbar ul li a {
     color: var(--cmar-primary-palette-black);
 }
+.masthead .main-navbar ul li:hover a, .masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
+    border-radius: 0.3rem;
+    background-color: var(--cmar-primary-palette-light-blue);
+}
 .masthead .navbar .logo img {
     height: 120px;
 }
