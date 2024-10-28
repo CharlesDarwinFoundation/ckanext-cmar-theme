@@ -144,3 +144,27 @@ h1.page-heading {
 .homepage .module-feeds .container {
     margin-bottom: 3rem;
 }
+
+
+/* ----- Pages ----- */
+.main {
+    background-image: none;
+    background-color: var(--bs-white);
+}
+.main .toolbar {
+    background-color: var(--cmar-primary-palette-light-blue);
+    padding: 10px 5px 10px 25px;
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+}
+.main .toolbar .breadcrumb a {
+    color: var(--bs-white);
+}
+.main .row.wrapper {
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+}
+.main .secondary {
+    padding-top: 20px;
+}
