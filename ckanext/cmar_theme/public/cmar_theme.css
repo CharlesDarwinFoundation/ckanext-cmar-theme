@@ -73,15 +73,28 @@ body {
 }
 .masthead .main-navbar ul li a {
     color: var(--cmar-primary-palette-black);
+    padding: 0.4rem 0.9rem;
 }
 .masthead .main-navbar ul li:hover a, .masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
     border-radius: 0.3rem;
     background-color: var(--cmar-primary-palette-light-blue);
+    color: var(--bs-white);
+}
+.masthead .main-navbar .account-masthead ul li a {
+    border-radius: 0.3rem;
+    background-color: var(--cmar-primary-palette-light-green);
+    font-size: 0.9rem;
+    line-height: unset;
+    min-width: 6rem;
+    text-align: center;
 }
 .masthead .navbar .logo img {
     height: 120px;
 }
-
+.navbar-light .navbar-toggler {
+    background-color: var(--cmar-primary-palette-light-blue);
+    border: none;
+}
 
 /* ----- Footer ----- */
 .site-footer {
