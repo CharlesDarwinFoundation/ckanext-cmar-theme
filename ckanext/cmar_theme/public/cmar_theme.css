@@ -168,3 +168,12 @@ h1.page-heading {
 .main .secondary {
     padding-top: 20px;
 }
+.main .secondary .module-heading {
+    background-color: var(--bs-white);
+    border: none;
+    font-size: 1.2rem;
+}
+.main .secondary .module-content {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+}
