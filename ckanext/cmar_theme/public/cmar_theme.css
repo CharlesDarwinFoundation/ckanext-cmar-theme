@@ -68,7 +68,8 @@ body {
 .account-masthead .account ul li {
     border: none;
 }
-.account-masthead .account ul li a {
+.account-masthead .account ul li a,
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li form button {
     color: var(--cmar-primary-palette-dark-blue);
 }
 .masthead .main-navbar ul li a {
@@ -80,7 +81,8 @@ body {
     background-color: var(--cmar-primary-palette-light-blue);
     color: var(--bs-white);
 }
-.masthead .main-navbar .account-masthead ul li a {
+.masthead .main-navbar .account-masthead ul li a,
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li a {
     border-radius: 0.3rem;
     background-color: var(--cmar-primary-palette-light-green);
     font-size: 0.9rem;
@@ -88,6 +90,32 @@ body {
     min-width: 6rem;
     text-align: center;
 }
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li a,
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li form {
+    background-color: var(--bs-white);
+    font-size: 0.9rem;
+    line-height: unset;
+    min-width: unset;
+    text-align: center;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+}
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li a:hover,
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li form button:hover {
+    color: var(--cmar-primary-palette-light-blue);
+    text-decoration: none;
+}
+.masthead .main-navbar .account-masthead .account.avatar.authed {
+    border-left: 1px solid var(--cmar-primary-palette-dark-blue);
+    padding-left: 0.7rem;
+}
+.masthead .main-navbar .account-masthead .account.avatar.authed ul li {
+    display: flex;
+    align-items: center;
+}
+
 .masthead .navbar .logo img {
     height: 120px;
 }
