@@ -1,14 +1,18 @@
+{% set sitename = config.get('ckan.site_title') %}
 {% set intro = g.site_intro_text %}
 
 <div class="module-promotion card box">
     <div>
+      {% if sitename %}
+        <h1 class="page-heading">{{ sitename }}</h1>
+      {% else %}
+        <h1 class="page-heading">{{ _("HUB de Información CMAR") }}</h1>
+      {% endif %}
       {% if intro %}
         {{ h.render_markdown(intro) }}
       {% else %}
-        <h1 class="page-heading">{{ _("HUB de Información CMAR") }}</h1>
         <p>
-          {% trans %}This is a nice introductory paragraph about CKAN or the site
-          in general.<br />We don't have any copy to go here yet but soon we will
+          {% trans %}Bienvenido al Hub de información del Corredor Marino del Pacifico Este Tropical (CMAR). Este repositorio reúne documentos producidos por los órganos de gobernanza y socios estratégicos de esta iniciativa regional.
           {% endtrans %}
         </p>
       {% endif %}
