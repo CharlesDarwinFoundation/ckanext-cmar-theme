@@ -16,5 +16,7 @@ setup(
     entry_points='''
         [ckan.plugins]
         cmar_theme=ckanext.cmar_theme.plugin:CmarThemePlugin
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
     ''',
 )
