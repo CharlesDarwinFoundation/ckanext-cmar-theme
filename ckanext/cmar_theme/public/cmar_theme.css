@@ -157,6 +157,7 @@ body {
 .homepage .hero {
     background-image: none;
     background-color: var(--cmar-primary-palette-light-blue);
+    padding: 4rem 0;
 }
 .homepage .module-promotion {
     background-color: var(--cmar-primary-palette-light-blue);
@@ -172,8 +173,20 @@ h1.page-heading {
     color: var(--bs-white);
     font-size: 2rem;
 }
+.homepage .search-input {
+    width: 80%;
+    margin: 0 auto;
+}
 .homepage .search-form .search-input input.form-control {
-    border-radius: 1.1rem;
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    padding: 20px 30px;
+}
+.homepage .search-form .search-input.search-giant button {
+    right: 30px;
+}
+.homepage .search-form .search-input.search-giant button i {
+    color: var(--cmar-primary-palette-dark-blue);
 }
 .homepage .module-feeds {
     background-image: none;
