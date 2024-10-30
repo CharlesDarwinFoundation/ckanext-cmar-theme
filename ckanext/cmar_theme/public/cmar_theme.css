@@ -59,7 +59,6 @@ body {
     border-bottom: none;
 }
 
-
 /* ----- Header ----- */
 .masthead,
 .account-masthead {
@@ -73,6 +72,9 @@ body {
 .account-masthead .account ul li a,
 .masthead .main-navbar .account-masthead .account.avatar.authed ul li form button {
     color: var(--cmar-primary-palette-dark-blue);
+}
+.masthead .main-navbar ul li {
+    white-space: nowrap;
 }
 .masthead .main-navbar ul li a {
     color: var(--cmar-primary-palette-black);
@@ -275,6 +277,14 @@ h1.page-heading {
 .main .toolbar .breadcrumb a {
     color: var(--bs-white);
 }
+.main .toolbar .home span {
+    display: inline;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.main .toolbar .home span:hover {
+    text-decoration: underline;
+}
 .main .row.wrapper {
     border: none;
     box-shadow: none;
@@ -289,6 +299,7 @@ h1.page-heading {
 }
 .main .secondary .module-heading {
     background-color: var(--bs-white);
+    color: var(--cmar-primary-palette-dark-blue);
     border: none;
     font-size: 1.2rem;
 }
@@ -303,6 +314,7 @@ h1.page-heading {
 .main .primary .btn-primary {
     background-color: var(--cmar-primary-palette-dark-green);
     border-color: var(--cmar-primary-palette-dark-green);
+    color: var(--bs-white);
 }
 .main .primary .search-form .search-input-group {
     border: 1px solid var(--cmar-primary-palette-black-trans);
@@ -319,4 +331,14 @@ h1.page-heading {
 }
 .main .primary .control-order-by .form-select {
     border: 1px solid var(--cmar-primary-palette-black-trans);
+}
+.main h1.page-heading {
+    color:var(--cmar-primary-palette-dark-blue);
+}
+.main a {
+    color: var(--cmar-primary-palette-main-blue);
+    font-weight: 600;
+}
+.main a:hover {
+    color: var(--cmar-primary-palette-light-blue);
 }

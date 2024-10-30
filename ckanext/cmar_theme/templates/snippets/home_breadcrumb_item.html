@@ -1,0 +1,4 @@
+{% set sitename = config.get('ckan.site_title') %}
+
+{# Used to insert the home icon into a breadcrumb #}
+<li class="home"><a href="{{ h.url_for('home.index') }}" aria-label="{{ _('Home') }}"><i class="fa fa-home"></i><span>{% if sitename %}{{ sitename }}{% else %}{{ _("HUB de Información CMAR") }}{% endif %}</span></a></li>
