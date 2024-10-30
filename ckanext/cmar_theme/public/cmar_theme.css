@@ -247,6 +247,7 @@ h1.page-heading {
 .homepage .module-feeds h2{
     text-align: center;
     font-size: 2rem;
+    color: var(--cmar-primary-palette-dark-blue);
 }
 .homepage .module-feeds .container {
     margin-bottom: 3rem;
@@ -311,6 +312,9 @@ h1.page-heading {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.main .primary .page_primary_action {
+    float: right;
+}
 .main .primary .btn-primary {
     background-color: var(--cmar-primary-palette-dark-green);
     border-color: var(--cmar-primary-palette-dark-green);
@@ -331,9 +335,6 @@ h1.page-heading {
 }
 .main .primary .control-order-by .form-select {
     border: 1px solid var(--cmar-primary-palette-black-trans);
-}
-.main h1.page-heading {
-    color:var(--cmar-primary-palette-dark-blue);
 }
 .main a {
     color: var(--cmar-primary-palette-main-blue);
