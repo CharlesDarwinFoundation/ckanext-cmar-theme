@@ -58,6 +58,7 @@ body {
     border-bottom: none;
 }
 
+
 /* ----- Header ----- */
 .masthead,
 .account-masthead {
@@ -128,6 +129,7 @@ body {
     border: none;
 }
 
+
 /* ----- Footer ----- */
 .site-footer {
     background-image: none;
@@ -152,6 +154,7 @@ body {
 .site-footer .footer-contact p {
     margin-bottom: 0;
 }
+
 
 /* ----- Homepage ----- */
 .homepage .hero {
@@ -205,6 +208,14 @@ h1.page-heading {
 }
 .homepage .module-feeds .container {
     margin-bottom: 3rem;
+}
+@media (max-width: 991px) {
+    h1.page-heading {
+        font-size: 3rem;
+    }
+    .module-promotion p {
+        font-size: 1.5rem;
+    }
 }
 
 
