@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-cmar-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-29 22:01+0000\n"
+"POT-Creation-Date: 2024-10-30 21:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,16 +23,12 @@ msgstr ""
 msgid "Navigate to Home - {site_title}"
 msgstr ""
 
-#: ckanext/cmar_theme/templates/footer.html:22
+#: ckanext/cmar_theme/templates/footer.html:27
 msgid "About {0}"
 msgstr ""
 
 #: ckanext/cmar_theme/templates/footer.html:28
-msgid "CKAN API"
-msgstr ""
-
-#: ckanext/cmar_theme/templates/footer.html:29
-msgid "CKAN Association"
+msgid "CMAR Pacífico"
 msgstr ""
 
 #: ckanext/cmar_theme/templates/header.html:22
@@ -110,7 +106,7 @@ msgstr ""
 
 #: ckanext/cmar_theme/templates/home/snippets/promoted.html:15
 msgid ""
-"Bienvenido al Hub de información del Corredor Marino del Pacifico Este "
+"Bienvenido al Hub de información del Corredor Marino del Pacífico Este "
 "Tropical (CMAR). Este repositorio reúne documentos producidos por los órganos"
 " de gobernanza y socios estratégicos de esta iniciativa regional."
 msgstr ""
