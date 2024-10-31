@@ -59,6 +59,18 @@ body {
     border-bottom: none;
 }
 
+.btn-primary,
+.btn-success {
+    background-color: var(--cmar-primary-palette-dark-green);
+    border-color: var(--cmar-primary-palette-dark-green);
+    color: var(--bs-white) !important;
+}
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: var(--cmar-primary-palette-light-blue);
+    border-color: var(--cmar-primary-palette-light-blue);
+}
+
 /* ----- Header ----- */
 .masthead,
 .account-masthead {
@@ -277,6 +289,10 @@ h1.page-heading {
 }
 .main .toolbar .breadcrumb a {
     color: var(--bs-white);
+    font-weight: normal;
+}
+.main .toolbar .breadcrumb .active a {
+    font-weight: 600;
 }
 .main .toolbar .home span {
     display: inline;
@@ -309,16 +325,10 @@ h1.page-heading {
     padding-bottom: 1.5rem;
 }
 .main .primary {
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 .main .primary .page_primary_action {
     float: right;
-}
-.main .primary .btn-primary {
-    background-color: var(--cmar-primary-palette-dark-green);
-    border-color: var(--cmar-primary-palette-dark-green);
-    color: var(--bs-white);
 }
 .main .primary .search-form .search-input-group {
     border: 1px solid var(--cmar-primary-palette-black-trans);
@@ -342,4 +352,52 @@ h1.page-heading {
 }
 .main a:hover {
     color: var(--cmar-primary-palette-light-blue);
+}
+
+
+/* ----- Datasets ----- */
+section#organization-info {
+    margin-bottom: 2rem;
+}
+/* Filters */
+.filters .nav-simple > li {
+    border-bottom: none;
+    padding: 0 25px;
+}
+.filters li.nav-item .item-label {
+    font-weight: normal;
+    color: var(--cmar-primary-palette-black);
+    font-size: 1rem;
+}
+span.hidden.separator {
+    visibility: hidden;
+}
+.module-footer {
+    border: none;
+}
+/* Dataset List */
+.dataset-list .dataset-item a.badge {
+    background-color: var(--cmar-primary-palette-light-blue);
+    color: var(--bs-white);
+    padding: 10px;
+    font-weight: normal;
+}
+.dataset-list .dataset-item .dataset-heading span.badge {
+    background-color: var(--cmar-primary-palette-dark-blue) !important;
+}
+.dataset-list .dataset-item .dataset-heading i.fa.fa-lock {
+    margin-right: 5px;
+}
+
+/* ----- Organizaciones y Grupos ----- */
+.primary .media-grid {
+    background-color: var(--bs-white);
+    background-image: none;
+    border: none;
+}
+
+
+/* ----- Dataset ----- */
+.social .nav-simple > li  {
+    border-bottom: none;
 }
