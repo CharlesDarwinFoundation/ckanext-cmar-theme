@@ -360,6 +360,13 @@ section#organization-info {
     margin-bottom: 2rem;
 }
 /* Filters */
+.filters .filter-heading {
+    color: var(--cmar-primary-palette-black);
+    margin-bottom: 12px;
+}
+.filters .module {
+    margin-bottom: 0.8rem;
+}
 .filters .nav-simple > li {
     border-bottom: none;
     padding: 0 25px;
@@ -369,25 +376,60 @@ section#organization-info {
     color: var(--cmar-primary-palette-black);
     font-size: 1rem;
 }
+.filters .nav-simple > li .item-count {
+    color: var(--cmar-primary-palette-black);
+    font-weight: normal;
+}
 span.hidden.separator {
     visibility: hidden;
 }
 .module-footer {
     border: none;
 }
+/* Filter list */
+.search-form .filter-list .facet {
+    color: var(--cmar-primary-palette-black);
+}
+.search-form .filter-list .pill {
+    background-color: var(--cmar-secundary-palette-grey-trans);
+    color: var(--cmar-primary-palette-black);
+    padding: 4px 6px 3px 11px;
+    border-radius: 0.25rem;
+}
+
 /* Dataset List */
 .dataset-list .dataset-item a.badge {
     background-color: var(--cmar-primary-palette-light-blue);
     color: var(--bs-white);
     padding: 10px;
     font-weight: normal;
+    font-size: 0.85rem;
 }
 .dataset-list .dataset-item .dataset-heading span.badge {
     background-color: var(--cmar-primary-palette-dark-blue) !important;
+    font-size: 0.7rem;
+    padding: 6px 6px 5px 6px;
+    margin: 6px;
 }
 .dataset-list .dataset-item .dataset-heading i.fa.fa-lock {
     margin-right: 5px;
 }
+.dataset-list .dataset-heading {
+    font-size: 1.2rem;
+}
+.module-narrow .nav-item > a:hover {
+    background-color: var(--cmar-secundary-palette-grey-trans);
+}
+.module-narrow .nav-item.active > a {
+    background-color: var(--cmar-primary-palette-light-blue);
+}
+.module-narrow .nav-item.active > a:before {
+    border-left-color: var(--cmar-primary-palette-light-blue);
+}
+.module-narrow .nav-item.active > a span {
+    color: var(--bs-white);
+}
+
 
 /* ----- Organizaciones y Grupos ----- */
 .primary .media-grid {
