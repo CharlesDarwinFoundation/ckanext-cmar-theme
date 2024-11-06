@@ -30,6 +30,7 @@
     --cmar-primary-palette-dark-blue: #2b4277;
     --cmar-primary-palette-light-blue: #379ed7;
     --cmar-primary-palette-main-blue: #3276bc;
+    --cmar-primary-palette-main-blue-trans: #3276bc26;
     --cmar-primary-palette-dark-green: #358f3c;
     --cmar-primary-palette-light-green: #83b640;
     --cmar-primary-palette-black: #121212;
@@ -363,18 +364,23 @@ h1.page-heading {
 .main a:hover {
     color: var(--cmar-primary-palette-light-blue);
 }
-.primary .table-header thead th {
+.primary .table thead th {
     background-color: var(--cmar-primary-palette-main-blue);
     color: var(--bs-white);
     box-shadow: none;
 }
-.primary .table-header tbody {
+.primary .table tbody {
     border-top: none;
 }
 .primary .table {
     --bs-table-hover-bg: var(--cmar-secundary-palette-grey-trans);
 }
-
+.table > :not(caption) > * > * {
+    border-bottom-width: 0px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: var(--cmar-primary-palette-main-blue-trans);
+}
 
 /* ----- Datasets ----- */
 section#organization-info {
@@ -462,4 +468,29 @@ span.hidden.separator {
 /* ----- Dataset ----- */
 .social .nav-simple > li  {
     border-bottom: none;
+}
+#dataset-resources {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+#dataset-resources h2{
+    color: var(--cmar-primary-palette-dark-blue);
+    margin-bottom: 1rem;
+}
+.resource-item .heading {
+    color: var(--cmar-primary-palette-black);
+}
+.additional-info h3 {
+    color: var(--cmar-primary-palette-dark-blue);
+}
+.additional-info td {
+    width: 65%;
+}
+.additional-info th {
+    width: 35%;
+}
+.additional-info .tags .tag-list {
+    padding: 0;
+    background-color: var(--bs-white);
+    border: none;
 }
