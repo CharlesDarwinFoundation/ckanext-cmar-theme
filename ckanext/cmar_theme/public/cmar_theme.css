@@ -326,9 +326,18 @@ h1.page-heading {
 }
 .main .primary {
     padding-bottom: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+}
+.main .primary .module-content.page-header {
+    background-color: var(--cmar-secundary-palette-grey-trans);
 }
 .main .primary .page_primary_action {
     float: right;
+}
+.main .primary .module-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 .main .primary .search-form .search-input-group {
     border: 1px solid var(--cmar-primary-palette-black-trans);
@@ -345,6 +354,7 @@ h1.page-heading {
 }
 .main .primary .control-order-by .form-select {
     border: 1px solid var(--cmar-primary-palette-black-trans);
+    box-shadow: none;
 }
 .main a {
     color: var(--cmar-primary-palette-main-blue);
@@ -352,6 +362,17 @@ h1.page-heading {
 }
 .main a:hover {
     color: var(--cmar-primary-palette-light-blue);
+}
+.primary .table-header thead th {
+    background-color: var(--cmar-primary-palette-main-blue);
+    color: var(--bs-white);
+    box-shadow: none;
+}
+.primary .table-header tbody {
+    border-top: none;
+}
+.primary .table {
+    --bs-table-hover-bg: var(--cmar-secundary-palette-grey-trans);
 }
 
 
@@ -393,7 +414,7 @@ span.hidden.separator {
 .search-form .filter-list .pill {
     background-color: var(--cmar-secundary-palette-grey-trans);
     color: var(--cmar-primary-palette-black);
-    padding: 4px 6px 3px 11px;
+    padding: 4px 6px 3px 8px;
     border-radius: 0.25rem;
 }
 
@@ -437,7 +458,6 @@ span.hidden.separator {
     background-image: none;
     border: none;
 }
-
 
 /* ----- Dataset ----- */
 .social .nav-simple > li  {
