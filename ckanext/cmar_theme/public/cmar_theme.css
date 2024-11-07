@@ -72,6 +72,7 @@ body {
     border-color: var(--cmar-primary-palette-light-blue);
 }
 
+
 /* ----- Header ----- */
 .masthead,
 .account-masthead {
@@ -491,6 +492,21 @@ span.hidden.separator {
 }
 .additional-info .tags .tag-list {
     padding: 0;
-    background-color: var(--bs-white);
+    background-color: unset;
     border: none;
+}
+.secondary #organization-info {
+    margin-bottom: 0;
+}
+.secondary #organization-info .context-info .image img {
+    margin-top: 2rem;
+    width: 40%;
+    height: unset;
+}
+.secondary #organization-info .context-info .read-more {
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+.secondary #package-info {
+    margin-top: -2rem;
 }
