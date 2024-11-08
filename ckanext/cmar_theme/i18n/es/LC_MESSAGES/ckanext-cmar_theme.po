@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-cmar-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: dolma.alonso@fcdarwin.org.ec\n"
-"POT-Creation-Date: 2024-10-30 22:33+0000\n"
+"POT-Creation-Date: 2024-11-08 21:49+0000\n"
 "PO-Revision-Date: 2024-10-29 22:12+0000\n"
 "Last-Translator: Anna Dolma Alonso <dolma.alonso@fcdarwin.org.ec>\n"
 "Language: es\n"
@@ -98,17 +98,21 @@ msgstr ""
 msgid "About CMAR HUB"
 msgstr "Acerca del HUB de Información CMAR"
 
-#: ckanext/cmar_theme/templates/home/index.html:41
+#: ckanext/cmar_theme/templates/home/index.html:34
 msgid "Destacados"
 msgstr ""
 
-#: ckanext/cmar_theme/templates/home/index.html:50
+#: ckanext/cmar_theme/templates/home/index.html:41
 msgid "Últimos Documentos"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/home/index.html:49
+msgid "Show more"
 msgstr ""
 
 #: ckanext/cmar_theme/templates/home/snippets/about_text.html:1
 msgid ""
-"<p>El Hub de información del Corredor Marino del Pacífico Este Tropical "
+"<p>El Hub de Información del Corredor Marino del Pacífico Este Tropical "
 "(CMAR) es una plataforma que centraliza y pone a su disposición más de 20"
 " años de información relevante sobre la trayectoria del CMAR. Este "
 "repositorio reúne documentos producidos tanto por sus órganos de "
@@ -148,7 +152,108 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: ckanext/cmar_theme/templates/package/search.html:5
+msgid "Filter Results"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:2
+msgid "Additional Info"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:8
+msgid "Source"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:23
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:28
+msgid "Author"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:35
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:40
+msgid "Maintainer"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:47
+msgid "Version"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:54
+msgid "State"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:61
+msgid "Last Updated"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:69
+msgid "Created"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/package/snippets/additional_info.html:79
+msgid "Tags"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/cmar_theme_display_package_card.html:14
+msgid "View Dataset"
+msgstr "Ver Documento"
+
+#: ckanext/cmar_theme/templates/snippets/facet_list.html:12
+msgid "Filter by: {title}"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/facet_list.html:20
+msgid "Search datasets by {name}: {label}"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/facet_list.html:35
+msgid "Show More {facet_type}"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/facet_list.html:38
+msgid "Show Only Popular {facet_type}"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/facet_list.html:42
+msgid "There are no {facet_type} that match this search"
+msgstr ""
+
 #: ckanext/cmar_theme/templates/snippets/home_breadcrumb_item.html:4
 msgid "Home"
 msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/license.html:4
+msgid "License"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/snippets/social.html:4
+msgid "Social"
+msgstr ""
+
+#~ msgid ""
+#~ "<p>El Hub de información del Corredor"
+#~ " Marino del Pacífico Este Tropical "
+#~ "(CMAR) es una plataforma que centraliza"
+#~ " y pone a su disposición más de"
+#~ " 20 años de información relevante "
+#~ "sobre la trayectoria del CMAR. Este "
+#~ "repositorio reúne documentos producidos tanto"
+#~ " por sus órganos de gobernanza, como"
+#~ " por los socios estratégicos que "
+#~ "apoyan esta importante iniciativa "
+#~ "regional.</p> <p>El Hub funciona como un"
+#~ " repositorio de información, proporcionando "
+#~ "a los miembros, socios y actores "
+#~ "del CMAR acceso a documentos y "
+#~ "recursos generados por diversos actores "
+#~ "desde 2004. Esta plataforma facilita la"
+#~ " consulta y el uso de información "
+#~ "clave para la protección y conservación"
+#~ " de los recursos marinos y costeros,"
+#~ " a nivel regional reflejando el "
+#~ "esfuerzo colaborativo de esta importante "
+#~ "iniciativa transfronteriza.</p> <p>CMAR: <a "
+#~ "href=\"https://www.cmarpacifico.org/\" "
+#~ "target=\"_blank\">https://www.cmarpacifico.org/</a></p>"
+#~ msgstr ""
 

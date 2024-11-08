@@ -262,10 +262,12 @@ h1.page-heading {
     text-align: center;
     font-size: 2rem;
     color: var(--cmar-primary-palette-dark-blue);
+    margin-bottom: 1.5rem;
 }
 .homepage .module-feeds .container {
     margin-bottom: 3rem;
 }
+
 @media (max-width: 991px) {
     h1.page-heading {
         font-size: 3rem;
@@ -274,6 +276,51 @@ h1.page-heading {
         font-size: 1.5rem;
     }
 }
+
+
+/* ----- Dataset Card ----- */
+.card.dataset-card {
+    border: 3px solid var(--cmar-primary-palette-light-blue);
+    border-radius: 0.7rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.card.dataset-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card.dataset-card .card-body {
+    padding: 1.5rem;
+}
+.card.dataset-card .card-title {
+    color: var(--cmar-primary-palette-dark-blue);
+    font-size: calc(1.35625rem + 0.075vw);
+}
+.card.dataset-card .card-text {
+    line-height: 1.3;
+}
+.card.dataset-card .btn,
+.show-more .btn:hover {
+    width: fit-content;
+    background-color: var(--cmar-primary-palette-light-blue);
+    border-color: var(--cmar-primary-palette-light-blue);
+}
+.card.dataset-card .btn:hover,
+.show-more .btn {
+    width: fit-content;
+    background-color: var(--cmar-primary-palette-main-blue);
+    border-color: var(--cmar-primary-palette-main-blue);
+}
+.show-more {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+    .card.dataset-card .card-title {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 /* ----- Pages ----- */

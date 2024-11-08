@@ -22,14 +22,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        {# Note: this featured_group block is used as an example in the theming
-                        tutorial in the docs! If you change this code, be sure to check
-                        whether you need to update the docs. #}
-                        {# Start template block example. #}
-                        {% block featured_group %}
-                        {% snippet 'home/snippets/featured_group.html' %}
-                        {% endblock %}
-                        {# End template block example. #}
+
                     </div>
                 </div>
             </div>
@@ -45,11 +38,15 @@
         </div>
         <div class="latest-datasets">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <h2>{{ _('Últimos Documentos') }}</h2>
-                      </div>
-                    </div>
+                <h2>{{ _('Últimos Documentos') }}</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    {% for dataset in h.cmar_theme_latest_datasets() %}
+                        {% snippet 'snippets/cmar_theme_display_package_card.html',
+                                    dataset = dataset %}
+                    {% endfor %}
+                </div>
+                <div class="text-center show-more">
+                    <a href="{{ h.url_for('dataset.search') }}" class="btn btn-primary">{{ _('Show more') }}</a>
                 </div>
             </div>
         </div>

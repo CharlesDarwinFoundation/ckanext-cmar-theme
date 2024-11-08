@@ -1,0 +1,17 @@
+{#
+Renders a dataset card.
+
+dataset - the dataset to render
+#}
+<div class="col">
+    <div class="card dataset-card h-100">
+        <div class="card-body d-flex flex-column">
+            <h3 class="card-title">{{ dataset.title }}</h3>
+            <p class="card-text created-date">{{ dataset.metadata_created.split('T')[0] }}</p>
+            {% if dataset.notes %}
+                <p class="card-text">{{ dataset.notes | truncate(100) }}</p>
+            {% endif %}
+            <a href="{{ h.url_for('dataset.read', id=dataset.name) }}" class="btn btn-primary mt-auto">{{ _('View Dataset') }}</a>
+        </div>
+    </div>
+</div>
