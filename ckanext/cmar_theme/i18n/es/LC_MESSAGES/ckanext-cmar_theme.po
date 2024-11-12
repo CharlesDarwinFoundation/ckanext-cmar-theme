@@ -41,7 +41,7 @@ msgstr "Documentos"
 
 #: ckanext/cmar_theme/templates/header.html:36
 msgid "Organizations"
-msgstr "Integrantes
+msgstr "Integrantes"
 
 #: ckanext/cmar_theme/templates/header.html:38
 msgid "Groups"
