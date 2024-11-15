@@ -524,7 +524,8 @@ span.hidden.separator {
     background-image: none;
     border: none;
 }
-.row.organization-card-container {
+.row.organization-card-container,
+.row.group-card-container {
     width: 100%;
 }
 
