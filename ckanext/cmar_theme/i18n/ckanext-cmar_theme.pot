@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-cmar-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-08 21:49+0000\n"
+"POT-Creation-Date: 2024-11-15 17:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,6 +149,34 @@ msgstr ""
 
 #: ckanext/cmar_theme/templates/home/snippets/search.html:9
 msgid "Search"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:23
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:25
+msgid "0 Datasets"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:31
+msgid "{num} Member"
+msgid_plural "{num} Members"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:33
+msgid "0 Members"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:44
+msgid "Open details page for {name}"
+msgstr ""
+
+#: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:46
+msgid "View Organization"
 msgstr ""
 
 #: ckanext/cmar_theme/templates/package/search.html:5

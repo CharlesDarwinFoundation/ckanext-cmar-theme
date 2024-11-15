@@ -314,7 +314,17 @@ h1.page-heading {
 .show-more {
     margin-top: 2.5rem;
 }
-
+.card.card.dataset-card img {
+    margin-bottom: 1.5rem;
+    max-width: 170px;
+}
+.card.dataset-card p.count {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+.card.dataset-card p.count:last-of-type {
+    margin-bottom: 1rem;
+}
 @media (min-width: 1200px) {
     .card.dataset-card .card-title {
         font-size: 1.5rem;
@@ -429,6 +439,8 @@ h1.page-heading {
 .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: var(--cmar-primary-palette-main-blue-trans);
 }
+.
+
 
 /* ----- Datasets ----- */
 section#organization-info {
@@ -511,6 +523,9 @@ span.hidden.separator {
     background-color: var(--bs-white);
     background-image: none;
     border: none;
+}
+.row.organization-card-container {
+    width: 100%;
 }
 
 /* ----- Dataset ----- */

@@ -1,0 +1,10 @@
+{% block organization_list %}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 g-4 organization-card-container">
+    {% block organization_list_inner %}
+        {% for organization in organizations %}
+            {% snippet "organization/snippets/organization_item.html",
+            organization=organization, position=loop.index, show_capacity=show_capacity %}
+        {% endfor %}
+    {% endblock %}
+</div>
+{% endblock %}

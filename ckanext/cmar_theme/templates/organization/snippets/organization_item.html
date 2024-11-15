@@ -1,0 +1,54 @@
+{% block item %}
+<div class="col">
+    <div class="card dataset-card h-100">
+        <div class="card-body d-flex flex-column">
+            {% block item_inner %}
+
+                {% block image %}
+                    <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" alt="{{ organization.name }}" class="img-fluid media-image">
+                {% endblock %}
+
+                {% block title %}
+                    <h2 class="media-heading">{{ organization.display_name }}</h2>
+                {% endblock %}
+
+                {% block description %}
+                    {% if organization.description %}
+                        <p class="media-description">{{ h.markdown_extract(organization.description, extract_length=80) }}</p>
+                    {% endif %}
+                {% endblock %}
+
+                {% block datasets %}
+                    {% if organization.package_count %}
+                        <p class="count">{{ ungettext('{num} Dataset', '{num} Datasets', organization.package_count).format(num=organization.package_count) }}</p>
+                    {% else %}
+                        <p class="count">{{ _('0 Datasets') }}</p>
+                    {% endif %}
+                {% endblock %}
+
+                {% block members %}
+                    {% if 'member_count' in organization and organization.member_count %}
+                        <p class="count">{{ ungettext('{num} Member', '{num} Members', organization.member_count).format(num=organization.member_count) }}</p>
+                    {% else %}
+                        <p class="count">{{ _('0 Members') }}</p>
+                    {% endif %}
+                {% endblock %}
+
+                {% block capacity %}
+                    {% if show_capacity and organization.capacity %}
+                        <p><span class="label label-default">{{ h.roles_translated().get(organization.capacity, organization.capacity) }}</span></p>
+                    {% endif %}
+                {% endblock %}
+
+                {% block link %}
+                    {% set view_label = _('Open details page for {name}').format(name=organization.display_name) %}
+                    <a href="{{ url }}" aria-label="{{ view_label }}" data-bs-title="{{ view_label }}" class="btn btn-primary mt-auto">
+                        {{ _('View Organization') }}
+                    </a>
+                {% endblock %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}
