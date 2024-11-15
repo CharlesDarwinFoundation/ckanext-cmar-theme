@@ -97,35 +97,33 @@ msgstr ""
 # | msgid "Datasets"
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:23
 #: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:23
-#, fuzzy
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] "Documentos"
-msgstr[1] ""
+msgstr[0] "{num} Documento"
+msgstr[1] "{num} Documentos"
 
 # | msgid "Datasets"
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:25
 #: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:25
-#, fuzzy
 msgid "0 Datasets"
-msgstr "Documentos"
+msgstr "0 Documentos"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:31
 #: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:31
 msgid "{num} Member"
 msgid_plural "{num} Members"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} Miembro"
+msgstr[1] "{num} Miembros"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:33
 #: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:33
 msgid "0 Members"
-msgstr ""
+msgstr "0 Miembro"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:44
 #: ckanext/cmar_theme/templates/organization/snippets/organization_item.html:44
 msgid "Open details page for {name}"
-msgstr ""
+msgstr "Abrir detalles de {name}"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:46
 #| msgid "Groups"
@@ -134,11 +132,11 @@ msgstr "Ver Tema"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:51
 msgid "Unlink {name} from the dataset"
-msgstr ""
+msgstr "Desconectar {name} del documento"
 
 #: ckanext/cmar_theme/templates/group/snippets/group_item.html:52
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
 #: ckanext/cmar_theme/templates/home/about.html:16
 msgid "About CMAR HUB"
