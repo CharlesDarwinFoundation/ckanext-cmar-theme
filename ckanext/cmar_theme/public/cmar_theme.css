@@ -72,6 +72,10 @@ body {
     border-color: var(--cmar-primary-palette-light-blue);
 }
 
+.main a.btn-danger,
+.main a.btn-danger:hover {
+    color: white;
+}
 
 /* ----- Header ----- */
 .masthead,
@@ -473,6 +477,7 @@ span.hidden.separator {
 .module-footer {
     border: none;
 }
+
 /* Filter list */
 .search-form .filter-list .facet {
     color: var(--cmar-primary-palette-black);
@@ -518,7 +523,7 @@ span.hidden.separator {
 }
 
 
-/* ----- Organizaciones y Grupos ----- */
+/* ----- Organizations & Groups ----- */
 .primary .media-grid {
     background-color: var(--bs-white);
     background-image: none;
@@ -528,6 +533,7 @@ span.hidden.separator {
 .row.group-card-container {
     width: 100%;
 }
+
 
 /* ----- Dataset ----- */
 .social .nav-simple > li  {
@@ -558,6 +564,11 @@ span.hidden.separator {
     background-color: unset;
     border: none;
 }
+.additional-info .tags .tag-list a:hover {
+    color: var(--bs-white);
+    background-color: var(--cmar-primary-palette-main-blue);
+    border-color: var(--cmar-primary-palette-main-blue);
+}
 .secondary #organization-info {
     margin-bottom: 0;
 }
@@ -572,4 +583,13 @@ span.hidden.separator {
 }
 .secondary #package-info {
     margin-top: -2rem;
+}
+.primary .add-to-group button {
+    margin-top: 1rem;
+}
+
+/* ----- Resource ----- */
+.module-resource .actions {
+    position: unset;
+    float: unset;
 }

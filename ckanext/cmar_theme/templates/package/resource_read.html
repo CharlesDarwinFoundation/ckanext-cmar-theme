@@ -1,0 +1,112 @@
+{% ckan_extends %}
+
+{% block resource_inner %}
+    <div class="module-content">
+
+        {% block resource_content %}
+            {% block resource_read_title %}<h1 class="page-heading">{{ h.resource_display_name(res) | truncate(50) }}</h1>{% endblock %}
+
+            {% block resource_read_url %}
+                {% if res.url and h.is_url(res.url) %}
+                    <p class="text-muted ellipsis">{{ _('URL:') }} <a class="resource-url-analytics" href="{{ res.url }}" aria-label="{{ _('Resource URL: {url}').format(url=res.url) }}">{{ res.url }}</a></p>
+                {% elif res.url %}
+                    <p class="text-muted break-word">{{ _('URL:') }} {{ res.url }}</p>
+                {% endif %}
+            {% endblock resource_read_url %}
+
+            <div class="actions">
+                {% block resource_actions %}
+                    <ul class="d-flex flex-wrap gap-1 justify-content-end">
+                        {% block resource_actions_inner %}
+                            {% block action_manage %}
+                                {% if h.check_access('package_update', {'id':pkg.id }) %}
+                                    <li>{% link_for _('Edit resource'), named_route=pkg.type ~ '_resource.edit', id=pkg.name, resource_id=res.id, class_='btn btn-default', icon='pencil' %}</li>
+                                    {% block action_manage_inner %}{% endblock %}
+                                    <li>{% link_for _('Views'), named_route=pkg.type ~ '_resource.views', id=pkg.name, resource_id=res.id, class_='btn btn-default', icon='chart-bar' %}</li>
+                                {% endif %}
+                            {% endblock action_manage %}
+
+                            {% if res.url and h.is_url(res.url) %}
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-primary resource-url-analytics" href="{{ res.url }}">
+                                            {% if res.resource_type in ('listing', 'service') %}
+                                                <i class="fa fa-eye"></i> {{ _('View') }}
+                                            {% elif  res.resource_type == 'api' %}
+                                                <i class="fa fa-key"></i> {{ _('API Endpoint') }}
+                                            {% elif not res.has_views and not res.url_type == 'upload' %}
+                                                <i class="fa fa-external-link"></i> {{ _('Go to resource') }}
+                                            {% else %}
+                                                <i class="fa fa-arrow-circle-down"></i> {{ _('Download') }}
+                                            {% endif %}
+                                        </a>
+                                        {% block download_resource_button %}{% endblock download_resource_button %}
+                                    </div>
+                                </li>
+                            {% endif %}
+                        {% endblock resource_actions_inner %}
+                    </ul>
+                {% endblock resource_actions %}
+            </div>
+
+            <div class="prose notes" property="rdfs:label">
+                {% if res.description %}
+                    {{ h.render_markdown(res.description) }}
+                {% endif %}
+            </div>
+        {% endblock resource_content %}
+
+
+        {% block data_preview %}
+            {% block resource_view %}
+                {% block resource_view_nav %}
+                    {% snippet "package/snippets/resource_views_list.html",
+                        views=resource_views,
+                        pkg=pkg,
+                        is_edit=false,
+                        view_id=current_resource_view['id'],
+                        resource=resource,
+                        extra_class="nav-tabs"
+                    %}
+                {% endblock resource_view_nav %}
+
+                {% block resource_view_content %}
+                    <div class="resource-view">
+                        {% if resource_views %}
+                            {% for resource_view in resource_views %}
+                                {% if resource_view == current_resource_view %}
+                                    {% snippet 'package/snippets/resource_view.html',
+                                        resource_view=resource_view,
+                                        resource=resource,
+                                        package=package
+                                    %}
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            {# Views not created #}
+                            <div class="data-viewer-info">
+                                <p>{{ _("There are no views created for this resource yet.") }}</p>
+                                {% if h.check_access('resource_view_create', {'resource_id': resource.id}) %}
+                                    <p class="text-muted">
+                                        <i class="fa fa-info-circle"></i>
+                                        {{ _("Not seeing the views you were expecting?")}}
+                                        <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#data-view-info">
+                                            {{ _('Click here for more information.') }}</a>
+                                    </p>
+                                    <div id="data-view-info" class="collapse">
+                                        <p>{{ _('Here are some reasons you may not be seeing expected views:') }}</p>
+                                        <ul>
+                                            <li>{{ _("No view has been created that is suitable for this resource")}}</li>
+                                            <li>{{ _("The site administrators may not have enabled the relevant view plugins")}}</li>
+                                            <li>{{ _("If a view requires the DataStore, the DataStore plugin may not be enabled, or the data may not have been pushed to the DataStore, or the DataStore hasn't finished processing the data yet")}}</li>
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endblock resource_view_content %}
+            {% endblock resource_view %}
+        {% endblock data_preview %}
+    </div>
+{% endblock resource_inner %}
