@@ -221,6 +221,7 @@ body {
     background-image: none;
     background-color: var(--cmar-primary-palette-light-blue);
     padding: 4rem 0;
+    margin-bottom: 3rem;
 }
 .homepage .module-promotion {
     background-color: var(--cmar-primary-palette-light-blue);
@@ -550,7 +551,8 @@ span.hidden.separator {
 .resource-item .heading {
     color: var(--cmar-primary-palette-black);
 }
-.additional-info h3 {
+.additional-info h3,
+.additional-info h2 {
     color: var(--cmar-primary-palette-dark-blue);
 }
 .additional-info td {
