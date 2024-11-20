@@ -551,9 +551,12 @@ span.hidden.separator {
 .resource-item .heading {
     color: var(--cmar-primary-palette-black);
 }
-.additional-info h3,
+.additional-info h3 {
+    color: var(--cmar-primary-palette-dark-blue);
+}
 .additional-info h2 {
     color: var(--cmar-primary-palette-dark-blue);
+    margin-bottom: 14px;
 }
 .additional-info td {
     width: 65%;
