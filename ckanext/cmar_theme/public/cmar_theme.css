@@ -444,7 +444,47 @@ h1.page-heading {
 .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: var(--cmar-primary-palette-main-blue-trans);
 }
-.
+
+@media (max-width:767px) {
+    .main .secondary {
+        padding-top: 0;
+    }
+    .module-content {
+        padding-top: 0;
+    }
+    .main .primary .page_primary_action {
+        float: none;
+    }
+    .js body.filters-modal .secondary .filters .hide-filters i {
+        font-size: 1.6rem;
+    }
+    .filters .module {
+        margin-bottom: 1.2rem !important;
+    }
+    .main .secondary .module h2.module-heading {
+        margin-top: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .main .secondary .module .module-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 0;
+    }
+    h1.page-heading {
+        margin-top: 2rem;
+    }
+    .secondary #package-info {
+        margin-top: 2rem;
+    }
+}
+
+.close.no-text.hide-filters i.fa.fa-times-circle {
+    color: white;
+
+}
+
+
 
 
 /* ----- Datasets ----- */
