@@ -372,12 +372,10 @@ h1.page-heading {
     box-shadow: none;
     margin-top: 0;
 }
-.main .row.wrapper:before {
-    border-right: 1px solid var(--cmar-primary-palette-black-trans);
-}
 .main .secondary {
     padding-top: 3rem;
     padding-bottom: 2rem;
+    border-right: 1px solid var(--cmar-primary-palette-black-trans);
 }
 .main .secondary .module-heading {
     background-color: var(--bs-white);
