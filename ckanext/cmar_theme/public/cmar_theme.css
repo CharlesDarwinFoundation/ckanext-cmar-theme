@@ -78,6 +78,21 @@ body {
 }
 
 
+/* -- Global structure -- */
+.main #content.container {
+    max-width: 100%; 
+    padding-right: 0;
+    padding-left: 0;
+}
+.main .primary div.module-content {
+    padding-right: 7%;
+    padding-left: 3%
+}
+.main .secondary {
+    padding-left: 5%;
+}
+
+
 /* ----- Header ----- */
 .masthead,
 .account-masthead {
@@ -274,6 +289,17 @@ h1.page-heading {
     margin-bottom: 3rem;
 }
 
+@media (min-width: 1300px) {
+    .main .primary .search-form .search-input-group {
+        max-width: 70%;
+    }
+    .page_primary_action {
+        margin-top: 5px;
+    }
+    ul.dataset-list {
+        max-width: 90%;
+    }
+}
 @media (max-width: 991px) {
     h1.page-heading {
         font-size: 3rem;
@@ -394,6 +420,9 @@ h1.page-heading {
 }
 .main .primary .module-content.page-header {
     background-color: var(--cmar-secundary-palette-grey-trans);
+}
+.main .primary .page-header .content_action {
+    margin-top: 0;
 }
 .main .primary .page_primary_action {
     float: right;
@@ -615,6 +644,7 @@ span.hidden.separator {
 }
 .secondary #organization-info {
     margin-bottom: 0;
+    margin-top: -3rem;
 }
 .secondary #organization-info .context-info .image img {
     margin-top: 2rem;
@@ -625,14 +655,21 @@ span.hidden.separator {
     margin-top: -1rem;
     margin-bottom: 0;
 }
+.secondary .context-info h1.heading {
+    margin-top: 2rem;
+}
 .secondary #package-info {
     margin-top: -2rem;
+    margin-bottom: 5rem;
 }
 .primary .add-to-group button {
     margin-top: 1rem;
 }
 
 /* ----- Resource ----- */
+.module-resource {
+    padding: 2rem 10% 1rem;
+}
 .module-resource .actions {
     position: unset;
     float: unset;
